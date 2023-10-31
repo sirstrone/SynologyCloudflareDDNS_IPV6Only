@@ -1,6 +1,9 @@
 # Synology Cloudflare DDNS Script 📜
 
-The is a script to be used to add [Cloudflare](https://www.cloudflare.com/) as a DDNS to [Synology](https://www.synology.com/) NAS. The script used an updated API, Cloudflare API v4.
+这个版本用来解决某大内网只有公网IPV6 没有公网IPV4的问题
+众所周知 如果同时上报IPV4和V6 双栈会选择延迟较低的那个(或者其他规则 总之获取不到准确的地址) 而对外显示的IPV4基本上都是NAT过的 
+
+脚本用法和之前一致 区别是没有获得IPV4的解析 只上报IPV6
 
 ## How to use
 
